@@ -227,6 +227,21 @@ main > section{
     filter: grayscale(100%);
 }
 
+/* footer section */
+.footer{
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #FFF4E7;
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+
+.footer-text{
+     font-size: 1.25rem;
+     text-align: center;
+     padding: 35px 0;
+}
+
 /* responsive media query */
 @media screen and (max-width: 576px) {
     .navbar, 
@@ -234,6 +249,11 @@ main > section{
     .features,
     .teams{
         flex-direction: column;
+    }
+    
+    .nav-links{
+        display: flex;
+        flex-direction: row;
     }
 
     .team-img-container, 
@@ -262,12 +282,16 @@ main > section{
         margin-top: 20px;
         margin-left: 20px;
     }
+    .footer-text{
+     font-size: 1rem;
+     padding: 20px
+    }
 
 }
 
 /* medium size device */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    .teams, .features{
+    .navbar, .teams, .features{
         flex-direction: column;
     }
 
